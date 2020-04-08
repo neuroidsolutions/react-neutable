@@ -1,8 +1,46 @@
 /* add css styles here (optional) */
 
-.test {
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+.theadTh {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  cursor: pointer;
+}
+.theadTh span {
+  margin-right: 5px;
+}
+.theadTh:hover i {
+  visibility: visible;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+  padding: 3px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: 0.7s;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.7s;
 }
